@@ -23,7 +23,7 @@ jobs:
         run: |
           COMMIT_MESSAGE="${{ steps.last_commit.outputs.message }}"
           
-          # Se não existir "## Changelog", cria
+          # Se não existir "## Changelog", criado
           if ! grep -q "## Changelog" README.md; then
             echo -e "\n## Changelog\n" >> README.md
           fi
